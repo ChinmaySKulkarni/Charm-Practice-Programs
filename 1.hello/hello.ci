@@ -1,0 +1,7 @@
+mainmodule hello
+{
+	mainchare main
+	{
+		entry main(CkArgMsg *m);	
+	};
+};		

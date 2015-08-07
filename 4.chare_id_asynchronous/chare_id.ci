@@ -1,0 +1,14 @@
+mainmodule chare_id
+{
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+		entry void printarea(int r, double area);
+	};
+	
+	chare simple
+	{
+		entry simple(double y, CProxy_main m);
+		entry void findarea(int x);
+	};
+};

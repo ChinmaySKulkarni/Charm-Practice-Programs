@@ -1,0 +1,19 @@
+mainmodule parallel_prefix
+{
+	readonly CProxy_main mainProxy;
+	readonly int memberCount;
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+		entry void checkIn(int);
+	};
+
+	array [1D] parallel
+	{
+		entry parallel();
+		entry void startStep();
+		entry void doStep(int);
+		entry void display();
+	};
+
+};

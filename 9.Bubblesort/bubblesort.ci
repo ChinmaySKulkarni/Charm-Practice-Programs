@@ -1,0 +1,22 @@
+mainmodule bubblesort
+{
+	readonly CProxy_main mainProxy;
+	readonly int totalMembers;
+	
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+		entry void checkIn(int);
+		entry void finishedDisplay(int);
+	};
+		
+	array [1D] bubble
+	{
+		entry bubble();
+		entry void startPhase(int);
+		entry void requestSwap(int);
+		entry void acceptSwap(int);
+		entry void denySwap();
+		entry void display(int);
+	};
+};

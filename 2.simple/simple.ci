@@ -1,0 +1,12 @@
+mainmodule simple
+{
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+	};
+	
+	chare simple
+	{
+		entry simple(int x,double y);
+	};
+};

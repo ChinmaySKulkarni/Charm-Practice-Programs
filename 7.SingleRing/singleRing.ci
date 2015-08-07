@@ -1,0 +1,14 @@
+mainmodule singleRing
+{
+	mainchare main
+	{
+		entry main();	
+		entry void finished();
+	};
+		
+	array [1D] ring
+	{
+		entry ring(CProxy_main mainProxy, int ringsize);
+		entry void doSomething(int elementsLeft, int tripsLeft, int fromIndex, int fromPE);
+	};
+}; 

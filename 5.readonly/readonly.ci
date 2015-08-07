@@ -1,0 +1,15 @@
+mainmodule read_only
+{
+	readonly CProxy_main mainProxy;	
+		
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+		entry void printarea(int r, double area);
+	};
+	
+	chare worker
+	{
+		entry worker(int r, double y);
+	};
+};

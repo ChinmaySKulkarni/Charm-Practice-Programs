@@ -1,0 +1,13 @@
+mainmodule arrayhello
+{
+	mainchare main	
+	{
+		entry main();	
+		entry void checkin();
+	};
+	
+	array [1D] hello
+	{
+		entry hello(CProxy_main master);
+	};
+};

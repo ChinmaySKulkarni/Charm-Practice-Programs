@@ -1,0 +1,13 @@
+mainmodule async
+{
+	mainchare main
+	{
+		entry main(CkArgMsg *m);
+	};
+	
+	chare simple
+	{
+		entry simple(double y);
+		entry void findarea(int x, bool);
+	};
+};
